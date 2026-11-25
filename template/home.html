@@ -1,0 +1,31 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Blog</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <div class="blog-container">
+
+        <h1>Personal Blog</h1>
+
+        <div class="article-list">
+
+            {% for data_loop in data %}
+            <div class="article">
+                <h3>{{ data_loop.title }}</h3>
+                <span>{{ data_loop.publish_date|date:"F j, Y" }}</span>
+            </div>
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+</body>
+</html>
