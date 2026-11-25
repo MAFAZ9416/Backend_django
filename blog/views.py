@@ -7,7 +7,7 @@ from .models import articles
 
 #login page
 def login(request):
-    pass    
+        
 
 # Home page views
 def home(request):
