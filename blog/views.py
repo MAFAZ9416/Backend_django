@@ -7,11 +7,11 @@ from .models import articles
 
 #login page
 def login(request):
-    
+    pass    
 
 # Home page views
 def home(request):
-
+    
     # fetch the data from the database
     fetch_data = articles.objects.all()
     context = {
